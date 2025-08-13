@@ -1,0 +1,13 @@
+.centered-carousel {
+  width: 80%; /* Set desired width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0;
+}
+
+.centered-carousel .carousel-inner,
+.centered-carousel .carousel-item,
+.centered-carousel img {
+  width: 100%;
+  height: auto;
+}
+

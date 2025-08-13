@@ -1,0 +1,202 @@
+@defer (hydrate on viewport) {
+
+<div class="container-fluid">
+    <div class="text-center mb-4">
+      <img src="assets/logoitl.png" alt="Logo de la empresa" class="logo-elect" style="width: 40%; height: auto; position: absolute; border: groove 1em #0056b3d1; border-radius: 18em; background-color: #ffffff9e;">
+        <img src="assets/mesatrabajo2.jpg" alt="Mesa de trabajo" width="100%" class="img-fluid mb-4">
+    </div>
+    <!-- Carrusel de Nuestros Trabajos -->
+    <div class="text-center mb-4 row">
+      <div [ngClass]="{'text-large': !isMobile, 'text-medium': isTablet, 'text-small': isMobile }">
+        <div [ngClass]="{'col-md-6': !isMobile, 'col-sm-12': isMobile }">
+          <div id="electricistaCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#electricistaCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#electricistaCarousel" data-slide-to="1"></li>
+              <li data-target="#electricistaCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/techoiluminado.jpg" class="d-block w-100" alt="Iluminación LED">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/tablero4.jpg" class="d-block w-100" alt="Tablero de luz">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/escalera.jpg" class="d-block w-100" alt="Armado de apliques">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/dicroicas.jpg" class="d-block w-100" alt="Dibujo técnico">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/tablero3.jpg" class="d-block w-100" alt="Dibujo técnico">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/tablero2.jpg" class="d-block w-100" alt="Dibujo técnico">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/pilarfrente.jpg" class="d-block w-100" alt="Dibujo técnico">
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <a class="carousel-control-prev" href="#electricistaCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#electricistaCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+        </div>
+        <div >  
+          <div  class="text-center mb-4 ">Nuestros Trabajos</div>
+          <p >
+            Contamos con más de 15 años de experiencia en el rubro, ofreciendo servicios eléctricos de alta calidad y confiabilidad. Nuestro equipo de profesionales certificados está comprometido con la seguridad y satisfacción del cliente.
+          </p>
+        </div>
+        </div>
+    </div>
+
+  <!-- Video Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div [ngClass]="{'text-large': !isMobile, 'text-medium': isTablet, 'text-small': isMobile }" class="row">
+        <p class="text-center">
+            Nuestro Trabajo en Acción
+            <br>
+            Contamos con más de 15 años de experiencia en el rubro, ofreciendo servicios eléctricos de alta calidad y confiabilidad. Nuestro equipo de profesionales certificados está comprometido con la seguridad y satisfacción del cliente.
+          </p>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="100%" height="auto" class="embed-responsive-item" src="/assets/pilar.mp4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section with Images -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h5>Opiniones (4.92<i class="fa-solid fa-star fa-xl">*</i>)
+</h5>
+            <div class="stars" style="color: gold; font-size: 3.2rem; margin-bottom: 10px;">
+              <i class="fa-solid fa-star fa-xl">*</i>
+              <i class="fa-solid fa-star fa-xl">*</i>
+              <i class="fa-solid fa-star fa-xl">*</i>
+              <i class="fa-solid fa-star fa-xl">*</i>
+              <i class="fa-solid fa-star fa-xl">*</i>
+            </div>
+          </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex align-items-start mb-4 row">
+            <img src="/assets/perfilc.jpg" alt="Cliente 1" class="rounded-circle align-items-center mr-3" style="width: 60px; height: 60px;">
+            <div class="stars" style="color: gold; font-size: 3rem;">
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+            </div>
+            
+            <blockquote class="blockquote flex-grow-1 ml-2 text-adpt">
+              <p>"Excelente trabajo, solucionaron un cortocircuito en menos de 2 horas a partir de mi llamado."</p>
+              <footer class="blockquote-footer">Carlos M., Luis Guillon</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-start mb-4 row">
+            <img src="assets/perfil1.jpg" alt="Cliente 2" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            <div class="stars" style="color: gold; font-size: 3rem;">
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+            </div>
+            <blockquote class="blockquote flex-grow-1 ml-2 text-adpt">
+              <p>"Me gestionaron todo el tramite para la solicitud del medidor. Muy recomendables."</p>
+              <footer class="blockquote-footer">Marta E., Ituzaingó</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-start mb-4 row">
+            <img src="assets/perfil2.jpg" alt="Cliente 3" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            <div class="stars" style="color: gold; font-size: 3rem;">
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+            </div>
+            <blockquote class="blockquote flex-grow-1 ml-2 text-adpt">
+              <p>"Cumplieron antes del tiempo pactado. Unos genios."</p>
+              <footer class="blockquote-footer">Ana G., Ciudad Evita</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-start mb-4 row">
+            <img src="assets/perfilS.jpg" alt="Cliente 4" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            <div class="stars" style="color: gold; font-size: 3rem;">
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+            </div>
+            <blockquote class="blockquote flex-grow-1 ml-2 text-adpt">
+              <p>"Excelentes precios"</p>
+              <footer class="blockquote-footer">Susana G., Ezeiza</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-start mb-4 row">
+            <img src="assets/perfilhombre.jpg" alt="Cliente 5" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            <div class="stars" style="color: gold; font-size: 3rem;">
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+            </div>
+            <blockquote class="blockquote flex-grow-1 ml-2 text-adpt">
+              <p>"Responden al instante y te despejan todas las dudas. Hice la instalación completa de mi casa y quedo impecable. Muy prolijos y ordenados. Muchas gracias chicos."</p>
+              <footer class="blockquote-footer">Martin R., Glew</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-start mb-4 row">
+            <img src="assets/perfilm.jpg" alt="Cliente 6" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            <div class="stars" style="color: gold; font-size: 3rem; ">
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+              <i class="fas fa-star">*</i>
+            </div>
+            <blockquote class="blockquote flex-grow-1 ml-2 text-adpt">
+              <p>"Excelente servicio"</p>
+              <footer class="blockquote-footer">Mariano C., Capital Federal</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+}
