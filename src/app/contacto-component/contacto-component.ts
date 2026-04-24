@@ -36,7 +36,6 @@ export class ContactoComponent {
             window.location.reload();   
     } else{
           alert('Error. Complete todos los campos!');
-          console.log(this.miFormulario.value);
 
     }
 
