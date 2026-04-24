@@ -2,57 +2,33 @@
     <h2>Contacto</h2>
   <!-- <img src="/assets/contact-hero.jpg" alt="Equipo de electricistas trabajando" class="hero-image"> -->
 </section>
-    <!-- #contactForm="ngForm" -->
-<!--  -->
+
 <section class="contact-form">
   <div class="form-container">
     <h3>Calificar</h3>
     <hr>
-    <form (ngSubmit)="onSubmit()" 
-    >
-      <div class="form-group">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" ngModel required>
-      </div>
-      
-      <div class="form-group">
-        <label for="email">Ciudad</label>
-        <input type="email" id="email" name="email" ngModel required email>
-      </div>
-      
-      <div class="form-group">
-        <label for="client">N° Cliente</label>
-        <input type="number" id="client" name="client" ngModel>
-      </div>
-
-      <div class="form-group">
-        <label for="star-rating">Calificación</label>
-          <!-- <input type="tel" id="stars" name="stars" ngModel> -->
-          <div class="star-rating">
-            <input id="star5" type="radio" name="rating" value="5" ngModel>
+<form [formGroup]="miFormulario" (ngSubmit)="enviar()">
+  <input type="text" formControlName="nombre" placeholder="Nombre" required>
+  <input type="text" formControlName="ciudad" placeholder="Ciudad">
+  <input type="number" formControlName="client" placeholder="N° Cliente">
+  <!-- <input type="none" formControlName="rating" placeholder="Calificación"> -->
+  <div class="star-rating">
+            <input id="star5" type="radio" name="rating" value="5" >
             <label for="star5">&#9733;</label>
-            <input id="star4" type="radio" name="rating" value="4" ngModel>
+            <input id="star4" type="radio" name="rating" value="4" >
             <label for="star4">&#9733;</label>
-            <input id="star3" type="radio" name="rating" value="3" ngModel>
+            <input id="star3" type="radio" name="rating" value="3" >
             <label for="star3">&#9733;</label>
-            <input id="star2" type="radio" name="rating" value="2" ngModel>
+            <input id="star2" type="radio" name="rating" value="2" >
             <label for="star2">&#9733;</label>
-            <input id="star1" type="radio" name="rating" value="1" ngModel>
+            <input id="star1" type="radio" name="rating" value="1" >
             <label for="star1">&#9733;</label>
           </div>
-      </div>
+  <textarea formControlName="message" placeholder="Mensaje"></textarea>
+  <button type="submit" 
+  >Enviar</button>
+</form>
 
-            
-      <div class="form-group">
-        <label for="message">Mensaje</label>
-        <textarea id="message" name="message" ngModel required></textarea>
-      </div>
-      
-      <!-- [disabled]="!contactForm.form.valid" -->
-      <button type="submit" 
-      >
-      Enviar</button>
-    </form>
   </div>
 </section>
 
